@@ -11,7 +11,8 @@ void minutes_to_12hour_time(stringstream &cin, stringstream &cout) {
         cin >> totalMinutes;
         int hours = (totalMinutes / 60) % 12;
         int minutes = totalMinutes % 60;
-        cout << hours << ":" << minutes << " !" << endl;
+        //block 1 output = 0:0 !
+        cout << hours << ":" << minutes << " !" << endl;    
 }
 
 void numbers_to_12hour_time(stringstream& cin, stringstream& cout)
@@ -30,7 +31,8 @@ void numbers_to_12hour_time(stringstream& cin, stringstream& cout)
     int hours = (totalSecondsAll / 3600) % 12;       
     int minutes = (totalSecondsAll / 60) % 60;    
     int seconds = totalSecondsAll % 60;             // leftover seconds
-
-    cout << hours << ":" << minutes << "." << seconds << " !" << endl;
+    //block 2 output = 0:0.0 !
+    cout << hours << ":" << minutes << "." << seconds << " !" << endl;     
 }
+
 
